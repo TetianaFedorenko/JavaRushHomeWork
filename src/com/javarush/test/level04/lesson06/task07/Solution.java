@@ -22,11 +22,22 @@ public class Solution
         int b = Integer.parseInt(s2);
         String s3 = reader.readLine();
         int c = Integer.parseInt(s3);
-        for (int i = 0; i < 3; i++) {
-            for (int j = 3; j < 1; j--) {
+        /*String s = s1+s2+s3;
+        if (a == b)
+            System.out.println(s.indexOf(s3));
+        else if (a == c)
+            System.out.println(s.indexOf(s2));
+        else if (b == c)
+            System.out.println(s.indexOf(s1));*/
 
-            }
+        if (a != b && a != c)
+            System.out.println("1");
+        if (b != a && b != c)
+            System.out.println("2");
+        if (c != a && c != b)
+            System.out.println("3");
+
         }
 
     }
-}
+
