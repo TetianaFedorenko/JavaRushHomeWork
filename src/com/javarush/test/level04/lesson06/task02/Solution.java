@@ -19,29 +19,13 @@ public class Solution
         int n2 = Integer.parseInt(b);
         int n3 = Integer.parseInt(c);
         int n4 = Integer.parseInt(d);
-        int m = 0;
-        int p = 0;
-        if (n1 > n2)
-        {
-            m = n1;
-            if (m > n3 && m > n4)
-                System.out.println(m);
-            else;
-        }
-        else if (n2 > n1)
-        {
-            p = n2;
-            if (p > n3 && p > n4)
-                System.out.println(p);
-            else;
-        }
-        else if (n3 > n4)
+        if (n1 > n2 && n1 > n3 && n1 > n4)
+            System.out.println(n1);
+        else if (n2 > n1 && n2 > n3 && n2 > n4)
+            System.out.println(n2);
+        else if (n3 > n1 && n3 > n2 && n3 > n4)
             System.out.println(n3);
-        else
+        else if (n4 > n1 && n4 > n2 && n4 > n3)
             System.out.println(n4);
-
-
-
-
     }
 }
