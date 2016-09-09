@@ -11,15 +11,31 @@ public class Solution
 {
     public static void main(String[] args)   throws Exception
     {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        while (b == -1 || a == -1) {
-            b = b+a;
-            System.out.println(b);
+        //int sum = 0;
+        //Scanner sc = new Scanner(System.in);
+        /*while (true) {
+            int a = sc.nextInt();
+            if (a == -1)
+            {
+                sum = sum + a;
+                System.out.println(sum);
+                break;
+            }
+            else
+            sum = sum + a;
+            System.out.println(sum);*/
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            int s = 0;
+            int d = 0;
+            while (s!=-1)
+            {
+
+                String str = reader.readLine();
+                s = Integer.parseInt(str);
+                d = s + d;
+            }
+            System.out.print(d);
+
         }
-
-
-
     }
-}
+
