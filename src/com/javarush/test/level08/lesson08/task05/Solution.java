@@ -37,11 +37,10 @@ public class Solution
 
     public static void removeTheFirstNameDuplicates(HashMap<String, String> map)
     {
-        //копируем ХэшМап
         HashMap<String,String> copy = new HashMap<String, String>(map);
-        //прогоняем копию по имени в поисках соответствий в оригинальном ХэшМап
+        //поиск соответствий имени в оригинальном ХэшМап
         for (Map.Entry<String, String> pair: copy.entrySet()) {
-            //с помощью итератора удаляем позиции из оригинала совпадающие по НЕуникальному имени и НЕсовпадающие по уникальному ключу
+            //удаление элементов из оригинала, которые совпадают по НЕуникальному имени и НЕ совпадают по уникальному ключу
             for (Iterator<Map.Entry<String, String>> iter = map.entrySet().iterator(); iter.hasNext(); ) {
                 Map.Entry<String, String> temp = iter.next();
                 if (pair.getValue().equals(temp.getValue())&&!pair.getKey().equals(temp.getKey())) iter.remove();
