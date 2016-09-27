@@ -52,10 +52,12 @@ public class Solution
     {
         for (int i = 0; i < array.length; i++)
         {
+
             if (isNumber(array[i]) == true)
             {
                 for (int j = 0; j < array.length; j++)
                 {
+
                     if (isNumber(array[j]) == true)
                     {
                         int a = Integer.parseInt(array[i]);
